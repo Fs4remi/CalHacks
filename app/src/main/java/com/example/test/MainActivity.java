@@ -21,8 +21,5 @@ public class MainActivity extends AppCompatActivity {
         //startActivity(intent);
     }
 
-    public void scan_for_students(android.view.View view){
-        Intent intent = new Intent(this, AttendenceScanner.class);
-        startActivity(intent);
-    }
+
 }

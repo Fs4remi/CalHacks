@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:onClick="get_notes"
-        android:text="Get Notes"
+        android:text="Session Summary"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,19 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/SignUpButton"
         app:layout_constraintVertical_bias="0.078" />
 
-    <Button
-        android:id="@+id/AttendanceScanButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:onClick="scan_for_students"
-        android:text="GET ATTENDANCE"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SummaryButton"
-        app:layout_constraintVertical_bias="0.078" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
