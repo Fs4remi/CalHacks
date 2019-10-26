@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AdminSignUp"></activity>
-        <activity android:name=".initialSetUp" />
-        <activity android:name=".MainAdmin" />
-        <activity android:name=".AttendenceScanner" />
-        <activity android:name=".signup" />
-        <activity android:name=".MainStudent">
+        <activity android:name=".initialSetUp" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainAdmin" />
+        <activity android:name=".AttendenceScanner" />
+        <activity android:name=".signup" />
+        <activity android:name=".MainStudent"/>
     </application>
 
 </manifest>
