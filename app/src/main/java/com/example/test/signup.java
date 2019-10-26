@@ -1,11 +1,11 @@
 package com.example.test;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class signup extends AppCompatActivity {
 
@@ -23,7 +23,7 @@ public class signup extends AppCompatActivity {
         //check for valid input:
         if(!(id.matches("^[a-zA-Z]{2}[0-9]{4}$"))) {
             net_id.setText("");
-            net_id.setError("Please enter your full NetID");
+            net_id.setError("Enter a valid netID");
         }else{
             //if valid, save the text:
             SharedPreferences app_data = PreferenceManager.getDefaultSharedPreferences(this);
