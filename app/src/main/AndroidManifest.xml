@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".AttendenceScanner"></activity>
         <activity android:name=".signup" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainStudent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
