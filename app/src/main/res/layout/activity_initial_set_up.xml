@@ -15,7 +15,6 @@
         android:inputType="none"
         android:onClick="sign_up_button"
         android:text="Set NetID"
-        android:textColorLink="#9C27B0"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,10 +32,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/SignUpButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.905" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/AdminSignUpeditText"
@@ -57,10 +53,8 @@
         android:text="Set Email"
         android:onClick="sign_up_adminButton"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AdminSignUpeditText"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintTop_toBottomOf="@+id/AdminSignUpeditText"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
