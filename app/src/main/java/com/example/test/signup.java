@@ -3,6 +3,7 @@ package com.example.test;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 public class signup extends AppCompatActivity {
 
@@ -13,7 +14,15 @@ public class signup extends AppCompatActivity {
     }
 
 
-    public void go_back(android.view.View view){
-        finish();
+    public void go_back(android.view.View view) {
+        EditText net_id = this.findViewById(R.id.net_idEditText);
+        String id = net_id.getText().toString();
+        //java.lang.System.out.println("bluh");
+        if(id.length() != 6) {
+            net_id.setError("Please enter your full NetID");
+        }else{
+            //save the text?
+            finish();
+        }
     }
 }
