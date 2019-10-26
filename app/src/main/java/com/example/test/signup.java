@@ -21,7 +21,8 @@ public class signup extends AppCompatActivity {
         EditText net_id = this.findViewById(R.id.net_idEditText);
         String id = net_id.getText().toString();
         //check for valid input:
-        if(id.length() != 6) {
+        if(!(id.matches("^[a-zA-Z]{2}[0-9]{4}$"))) {
+            net_id.setText("");
             net_id.setError("Please enter your full NetID");
         }else{
             //if valid, save the text:
