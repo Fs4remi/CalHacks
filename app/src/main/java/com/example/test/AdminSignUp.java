@@ -1,5 +1,6 @@
 package com.example.test;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -8,11 +9,6 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AdminSignUp extends AppCompatActivity {
-
-    public Boolean authorized(String password){
-        String correct_pass = "0";
-        return password == correct_pass;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +21,14 @@ public class AdminSignUp extends AppCompatActivity {
         EditText email = this.findViewById(R.id.emailEditText);
         String email_string = email.getText().toString();
 
-        EditText athentication_code = this.findViewById(R.id.authenticationEditText);
-        String athentication_code_string = athentication_code.getText().toString();
+        EditText authentication = this.findViewById(R.id.authenticationEditText);
+        String authentication_code = authentication.getText().toString();
 
         EditText password = this.findViewById(R.id.personalPasswordEditText);
         String password_string = password.getText().toString();
 
-        if(!authorized(athentication_code_string)){
-            athentication_code.setError("Incorrect authentication password");
+        if(!authentication_code.equals("0")){
+            authentication.setError("Incorrect authentication password");
         }
         else{
             SharedPreferences app_data = PreferenceManager.getDefaultSharedPreferences(this);
@@ -41,7 +37,8 @@ public class AdminSignUp extends AppCompatActivity {
             data.putString("PASSWORD", password_string);
             data.commit();
             //and go back:
-            finish();
+            Intent intent = new Intent(this, MainAdmin.class);
+            startActivity(intent);
         }
 
 

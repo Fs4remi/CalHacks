@@ -1,5 +1,6 @@
 package com.example.test;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -31,7 +32,8 @@ public class signup extends AppCompatActivity {
             data.putString("NETID", id);
             data.commit();
             //and go back:
-            finish();
+            Intent intent = new Intent(this, MainStudent.class);
+            startActivity(intent);
         }
     }
 }

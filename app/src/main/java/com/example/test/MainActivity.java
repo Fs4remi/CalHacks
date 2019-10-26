@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         String id = app_data.getString("NETID", "");
         String email = app_data.getString("EMAIL", "");
         Intent intent;
-        if(!email.isEmpty())
+        if(!email.equals(""))
             intent = new Intent(this, MainAdmin.class);
-        else if(!id.isEmpty())
+        else if(!id.equals(""))
             intent = new Intent(this, MainStudent.class);
         else
             intent = new Intent(this, initialSetUp.class);
