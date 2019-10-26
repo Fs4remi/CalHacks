@@ -1,7 +1,7 @@
 package com.example.test;
 
-import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainStudent extends AppCompatActivity {
@@ -11,10 +11,7 @@ public class MainStudent extends AppCompatActivity {
         setContentView(R.layout.student_main);
     }
 
-    public void sign_up_button(android.view.View view){
-        Intent intent = new Intent(this, signup.class);
-        startActivity(intent);
-    }
+
 
     public void get_notes(android.view.View view){
         //Intent intent = new Intent(this, signup.class);

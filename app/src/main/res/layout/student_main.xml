@@ -6,23 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainStudent">
 
-    <Button
-        android:id="@+id/SignUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:cursorVisible="false"
-        android:inputType="none"
-        android:onClick="sign_up_button"
-        android:text="Set NetID"
-        android:textColorLink="#9C27B0"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
-        tools:visibility="visible" />
+
 
     <Button
         android:id="@+id/SummaryButton"
