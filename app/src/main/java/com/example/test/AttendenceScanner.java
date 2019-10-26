@@ -50,6 +50,6 @@ public class AttendenceScanner extends AppCompatActivity {
     public void end(android.view.View v){
         //save bluetooth info?
         //exit bluetooth things
-        finish();
+        this.onDestroy();
     }
 }
